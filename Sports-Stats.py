@@ -38,5 +38,18 @@ class NFL_D:
     def __str__(self):
         return f"{self.name} has {self.tackles} tackes, {self.sacks} sacks, and {self.INTs} interceptions in his career"
 football_player_D= NFL_D("Ray Lewis", 1558, 41.5, 31)
-print(football_player_D)        
+print(football_player_D) 
+
+
+
+class NBA:
+    def __init__(self, name, points, rebounds, assists):
+        self.name= name
+        self.points= points
+        self.rebounds= rebounds
+        self.assists= assists
+    def __str__(self):
+        return f"{self.name} has {self.points} points, {self.rebounds} rebounds, abd {self.assists} assists in his career"
+NBA_player= NBA("Michael Jordan", 32292, 6672, 5633)
+print(NBA_player)
         
