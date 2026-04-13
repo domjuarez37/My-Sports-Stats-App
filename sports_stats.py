@@ -53,4 +53,5 @@ class NBA:
         return f"{self.name} has {self.points} points, {self.rebounds} rebounds, and {self.assists} assists in his career"
 NBA_player= NBA("Michael Jordan", 32292, 6672, 5633)
 print(NBA_player)
+
         
