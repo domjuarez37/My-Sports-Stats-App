@@ -12,10 +12,6 @@ class MLB:
 
 
 
-player= MLB("Gunnar Henderson",92,272,64)
-print(player) 
-
-
 class NFL_O:
     def __init__(self, name, TDs, yards, receptions ):
         self.name= name
@@ -26,8 +22,6 @@ class NFL_O:
         return f"{self.name} has {self.TDs} touchdowns, {self.yards} yards, and {self.receptions} receptions in his career"
 
 
-football_player_O= NFL_O("Zay Flowers", 14, 3128, 237)
-print(football_player_O)
 
 
 class NFL_D:
@@ -37,9 +31,8 @@ class NFL_D:
         self.sacks= sacks
         self.INTs= INTs
     def __str__(self):
-        return f"{self.name} has {self.tackles} tackes, {self.sacks} sacks, and {self.INTs} interceptions in his career"
-football_player_D= NFL_D("Ray Lewis", 1558, 41.5, 31)
-print(football_player_D) 
+        return f"{self.name} has {self.tackles} tackes, {self.sacks} sacks, and {self.INTs} interceptions in his career" 
+
 
 
 
@@ -51,7 +44,4 @@ class NBA:
         self.assists= assists
     def __str__(self):
         return f"{self.name} has {self.points} points, {self.rebounds} rebounds, and {self.assists} assists in his career"
-NBA_player= NBA("Michael Jordan", 32292, 6672, 5633)
-print(NBA_player)
 
-        
