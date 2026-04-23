@@ -1,3 +1,5 @@
+
+
 class MLB:
     def __init__(self, name, Homeruns, RBIs, SBs):
         self.name= name
@@ -44,4 +46,13 @@ class NBA:
         self.assists= assists
     def __str__(self):
         return f"{self.name} has {self.points} points, {self.rebounds} rebounds, and {self.assists} assists in his career"
+    
 
+
+
+class All_Players:
+    def __init__(self, name, sport):
+        self.name= name
+        self.sport= sport
+    def __str__(self):
+        return f"{self.name} plays {self.sport}"
