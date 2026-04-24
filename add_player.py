@@ -41,6 +41,8 @@ def add_player(database):
     name = input("Name: ")
     sport = input("Sport: ")
 
+    # Used AI to help with the row= ... makes the csv easier
+
     if sport== "Baseball":
        Homeruns= int(input("Homeruns: ")) 
        RBIs= int(input("RBIs: "))
@@ -82,9 +84,10 @@ def add_player(database):
 
     print(f"Entry added: {name}:")
 
-db = player_database()
+if __name__ == "__main__":
+    db = player_database()
    
-while True:
+    while True:
       add_player(db)
       another = input("Add another player? (y/n): ")
       if another == "n":
