@@ -23,6 +23,6 @@ while True:
     player = find_player(db, name)
 
     if player:
-        print("\n" + str(player))  # uses the str methods i built for each class
+        print("\n" + str(player))  # uses the str methods I built for each class
     else:
         print("Sorry, this player hasn't been added to the database.")
